@@ -21,7 +21,6 @@ body {
 .section {
   padding: var(--section-padding);
   margin-bottom: var(--section-gap);
-  color: white;
 }
 
 .sec1 { background-color: var(--color-1); }
