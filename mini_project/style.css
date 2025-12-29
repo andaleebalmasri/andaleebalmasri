@@ -117,12 +117,12 @@ nav .nav-links a:hover {
   font-size: 1.1rem;
 }
 
-.services-preview {
+.services {
   padding: 50px 20px;
   text-align: center;
 }
 
-.services-preview h2 {
+.services h2 {
   font-size: 2rem;
   margin-bottom: 30px;
 }
