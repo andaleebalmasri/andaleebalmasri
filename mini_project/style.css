@@ -133,7 +133,9 @@ nav .nav-links a:hover {
   flex-wrap: wrap;
   gap: 20px;
 }
-
+input{
+  display: inline-block;
+}
 .card {
   background-color: white;
   padding: 20px;
@@ -223,5 +225,4 @@ footer {
   to {
     opacity: 1;
   }
-    
-}
+   }
