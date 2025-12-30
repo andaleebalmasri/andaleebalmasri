@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Trip - Travel Guide for Beginners</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="logo"><h1>First Trip</h1></div>
+
+  <nav class="nav">
+    <a href="#features"><i class="fa-solid fa-star"></i> Features</a>
+    <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+
+  <button class="nav-toggle" aria-label="Toggle Menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <a class="btn btn--primary" href="#contact">
+    <i class="fa-solid fa-rocket"></i> Get Started
+  </a>
+</header>
+
+<main>
+  <section class="hero" id="about">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1 class="hero__title">Travel Guide for Beginners</h1>
+         <h2>Your Easy Start to Exploring the World</h2>
+    <p class="hero__desc" >Discover travel tips, planning advice, and essential guides to make your first trips smooth and unforgettable</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#features">
+            <i class="fa-solid fa-layer-group"></i> Explore Features
+          </a>
+          <a class="btn btn--ghost" href="#contact">
+            <i class="fa-solid fa-phone"></i> Contact Us
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__card">
+  <h3><i class="fa-solid fa-map-location-dot"></i> Start Your Journey</h3>
+  <ul class="list">
+    <li>A simple travel guide for beginners</li>
+    <li> Pre-trip planning tips</li>
+    <li>Choose the right destination</li>
+    <li>The most important things to pack</li>
+  </ul>
+</div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head">
+        <h2>Features</h2>
+        <p>All features you will need</p>
+      </div>
+<div class="features__grid">
+  <article class="card">
+    <h3><i class="fa-solid fa-route"></i> Trip Planning</h3>
+    <p>Step by step tips to organize your first journey</p> 
+  </article>
+
+  <article class="card">
+    <h3><i class="fa-solid fa-suitcase-rolling"></i> Packing Tips</h3>
+    <p>Learn how to pack smart and light for every adventure</p>
+  </article>
+
+  <article class="card">
+    <h3><i class="fa-solid fa-wallet"></i> Budget Travel</h3>
+    <p>Discover ways to travel without breaking the bank</p>
+  </article>
+
+  <article class="card">
+    <h3><i class="fa-solid fa-location-dot"></i> Destination Guide</h3>
+    <p>Choose the best destinations for first-time travelers</p>
+  </article>
+
+  <article class="card">
+    <h3><i class="fa-solid fa-shield-halved"></i> Travel Safety</h3>
+    <p>Essential safety tips to travel with confidence</p>
+  </article>
+
+  <article class="card">
+    <h3><i class="fa-solid fa-circle-info"></i> Beginner Tips</h3>
+    <p>Common mistakes to avoid and smart travel advice</p>
+  </article>
+</div>
+
+    
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container cta__box">
+      <div>
+        <h2>Ready to start?</h2>
+        <p>Click to stasrt now</p>
+      </div>
+      <a class="btn btn--primary" href="#">
+        <i class="fa-solid fa-play"></i> Start Now
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="logo logo--footer">First Trip</div>
+      <p class="muted">This is your way to start the adventure.</p>
+    </div>
+
+    <div class="footer__links">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer__copy muted">
+      © <span id="y"></span> First Trip. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
