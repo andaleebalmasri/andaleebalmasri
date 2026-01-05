@@ -80,7 +80,7 @@
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
     <textarea placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn primary">Send Message</button>
+    <button type="submit" class="btn x">Send Message</button>
   </form>
 </section>
 <script>
@@ -89,7 +89,9 @@ document.getElementById("registerBtn").addEventListener("click", function () {
   let name = document.getElementById("name").value;
   let age = Number(document.getElementById("age").value);
   let skill = document.getElementById("skill").value;
-
+  const button = document.querySelector('button');
+  button.style.backgroundColor = '#d8670b';
+ button.innerText="clicked";
   if (name === "" || skill === "" || age === 0) {
     alert("Please fill all fields");
     return;
