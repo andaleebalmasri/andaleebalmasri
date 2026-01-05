@@ -84,30 +84,33 @@
   </form>
 </section>
 <script>
-document.getElementById("registerBtn").addEventListener("click", function () {
-
-  let name = document.getElementById("name").value;
-  let age = Number(document.getElementById("age").value);
-  let skill = document.getElementById("skill").value;
-  const button = document.querySelector('button');
-  button.style.backgroundColor = '#d8670b';
- button.innerText="clicked";
-  if (name === "" || skill === "" || age === 0) {
-    alert("Please fill all fields");
-    return;
+  function registerVolunteer(name, age, skill) {
+    return {
+      name: name,
+      age: age,
+      skill: skill,
+     
+    };
   }
-
-  if (age < 18) {
-    alert("Age must be 18 or above");
-    return;
-  }
-
-  let volunteer = registerVolunteer(name, age, skill);
-
-  console.log(volunteer);
-  alert("Volunteer Registered Successfully!");
-});
-
+  const button = document.getElementById("registerBtn");
+  button.addEventListener("click", function () {
+    let name = document.getElementById("name").value;
+    let age = Number(document.getElementById("age").value);
+    let skill = document.getElementById("skill").value;
+    if (name === "" || skill === "" || age === 0) {
+      alert("Please fill all fields");
+      return;
+    }
+    if (age < 18) {
+      alert("Age must be 18 or above");
+      return;
+    }
+    button.style.color = "#d8670b";
+    button.innerText = "Clicked";
+    let volunteer = registerVolunteer(name, age, skill);
+    console.log(volunteer);
+    alert("Volunteer Registered Successfully!");
+  });
 </script>
 
 </body>
