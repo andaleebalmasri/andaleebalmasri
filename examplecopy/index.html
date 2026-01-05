@@ -69,7 +69,7 @@
 <input type="number" id="age" placeholder="Age">
 <input type="text" id="skill" placeholder="Skill">
 
-<button id="registerBtn">Register</button>
+<button id="registerBtn" onclick="register()">Register</button>
 
 </section>
 <section id="contact" class="contact">
@@ -92,6 +92,7 @@
      
     };
   }
+  function register(){
   const button = document.getElementById("registerBtn");
   button.addEventListener("click", function () {
     let name = document.getElementById("name").value;
@@ -110,7 +111,7 @@
     let volunteer = registerVolunteer(name, age, skill);
     console.log(volunteer);
     alert("Volunteer Registered Successfully!");
-  });
+  });}
 </script>
 
 </body>
