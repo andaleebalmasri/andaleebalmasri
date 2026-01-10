@@ -15,7 +15,12 @@ function checkInputs() {
     sendButton.disabled = true;
   }
 }
+// هاي مشان التحقق في contact 
 
+function isValidEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
 nameInput.addEventListener("input", checkInputs);
 emailInput.addEventListener("input", checkInputs);
 messageInput.addEventListener("input", checkInputs);
@@ -28,6 +33,8 @@ contactForm.addEventListener("submit", function(event) {
 
   contactForm.reset();
   sendButton.disabled = true;
+  //ارجعي افهمني هاي الجزئية
+    statusMessage.innerHTML = "<strong>Message sent successfully! ✅</strong"
 });
 // 
 
@@ -68,9 +75,12 @@ resetButton.addEventListener("click", () => {
     card.style.display = "block";
   });
 });
-//
+//ارجعي افهمني هاي الجزئية
 
 const cards = document.querySelectorAll(".opportunity-card");
 cards[0].style.backgroundColor = "#3a5a40";
+
+
+
 
 
