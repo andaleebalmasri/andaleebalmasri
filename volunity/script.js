@@ -71,6 +71,6 @@ resetButton.addEventListener("click", () => {
 //
 
 const cards = document.querySelectorAll(".opportunity-card");
-cards[0].style.backgroundColor = "yellow";
+cards[0].style.backgroundColor = "#3a5a40";
 
 
