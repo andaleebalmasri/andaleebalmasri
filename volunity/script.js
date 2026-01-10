@@ -68,5 +68,9 @@ resetButton.addEventListener("click", () => {
     card.style.display = "block";
   });
 });
+//
+
+const cards = document.querySelectorAll(".opportunity-card");
+cards[0].style.backgroundColor = "yellow";
 
 
