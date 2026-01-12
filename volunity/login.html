@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volunity Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+  <div class="logindiv">
+    <div class="login-card">
+
+      <div class="login-image">
+        <img src="./images/login.png" alt="Login Image">
+      </div>
+
+      <div class="login-form">
+
+        <form id="login" novalidate>
+
+          <input type="text" id="name" placeholder="Name">
+
+          <input type="number" id="age" placeholder="Age">
+
+          <div class="phonediv">
+            <select id="countrycode">
+              <option value="+962" selected>+962 </option>
+              <option value="+970">+970</option>
+              <option value="+966">+966</option>
+              <option value="+961">+961</option>
+              <option value="+20">+20</option>
+            </select>
+
+            <input type="tel" id="phone" placeholder="Phone Number">
+          </div>
+
+          <input list="countries" id="country" placeholder="Country">
+          <datalist id="countries">
+            <option value="Jordan">
+            <option value="Palestine">
+            <option value="Saudi Arabia">
+            <option value="Lebanon">
+            <option value="Egypt">
+          </datalist>
+
+          <input list="cities" id="city" placeholder="City">
+          <datalist id="cities">
+            <option value="Amman">
+            <option value="Irbid">
+            <option value="Zarqa">
+            <option value="Cairo">
+            <option value="Riyadh">
+          </datalist>
+
+          <input type="email" id="email" placeholder="Email">
+
+          <input type="password" id="password" placeholder="Password (min 10 chars)">
+
+          <button type="submit" id="submitbtn" disabled>Submit</button>
+
+        </form>
+
+        <p id="message"></p>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

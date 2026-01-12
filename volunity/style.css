@@ -550,6 +550,116 @@ margin-top: 20px;
 .join-btn:hover {
   background-color: #2f4732; 
 }
+.login-body{
+  margin: 0;
+  min-height: 100vh;
+  background-color: #2f4732;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  display: flex;
+  width: 850px;
+  max-width: 95%;
+  background-color: #efe6d8;
+  border-radius: 16px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  gap: 20px;
+}
+.login-image {
+  width: 45%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  width: 55%;
+  background-color: #efe6d8;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#login input,
+#login select,
+#login button {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #2f4732;
+  outline: none;
+}
+
+#login input:focus,
+#login select:focus {
+  border-color: #032b06;
+  box-shadow: 0 0 5px rgba(4, 63, 12, 0.5);
+}
+
+/* زر الإرسال */
+#login button {
+  background-color: #2f4732;
+  color:#efe6d8;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#login button:hover:not(:disabled) {
+  background-color: #2f4732;
+}
+
+#login button:disabled {
+  background-color: #c7c7c7;
+  cursor: not-allowed;
+}
+
+/* رقم الهاتف */
+.phone-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.phone-wrapper select {
+  flex: 0 0 100px;
+  cursor: pointer;
+}
+
+.phone-wrapper input {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .login-image,
+  .login-form {
+    width: 100%;
+  }
+
+  .login-image {
+    height: 220px;
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .nav-links{
@@ -582,7 +692,19 @@ margin-top: 20px;
     padding: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
+.login-card {
+    flex-direction: column;
+    width: 90%;
+  }
 
+  .login-image,
+  .login-form {
+    width: 100%;
+  }
+
+  .login-image {
+    height: 220px;
+  }
   .nav-links.show {
     display: flex;
   }
