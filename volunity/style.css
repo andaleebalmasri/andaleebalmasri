@@ -128,8 +128,35 @@ width: 120px;
   /* justify-content:center;   */
 }
 
+.opportunity-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.volunteer {
+  background-color: #efe6d8;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+}
 
-
+.volunteer h2 {
+  font-size: 2.5rem;
+ color: #635036;
+  margin-bottom: 20px;
+}
+.oppo_btn {
+  background-color: #3a5a40;
+  color: #efe6d8;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
 .hero-content {
   margin:  0 auto;
   /* padding: 50px; */
@@ -167,7 +194,8 @@ width: 120px;
 }
 
 .hero-image {
-  padding-top: 50px;
+  padding-top: 100  px;
+  border-radius: 50px;
   /* width: 50%;
    float: right;
    align-items: right;
@@ -175,6 +203,7 @@ width: 120px;
   display: flex;
   justify-content: flex-end;
   flex: 1;
+  box-shadow: #2f4732;
   /* min-width: 300px;
   width: 50%; */
 }

@@ -71,16 +71,22 @@ Join us and be part of a community that believes small acts of kindness can lead
     </div>
   </div>
 </section>
+<section id="volunteer" class="volunteer">
+  <h2>Volunteer Opportunities</h2>
+  <button id="loadOpportunities" class="oppo_btn">View Opportunities</button>
+  <p id="status"></p>
+  <div id="opportunitiesContainer"></div>
+</section>
 
-<section id="opportunities" class="opportunities">
+<!-- <section id="opportunities" class="opportunities">
   <h2>Volunteer Opportunities</h2>
   <p>Explore the ways you can contribute and make a positive impact in your community.</p>
 <div class="reset">
   <input type="text" id="searchInput" placeholder="Search by opportunity name">
 <button type="button" id="resetButton">Reset</button>
 </div>
-  <div class="opportunities-container" >
-    <div class="opportunity-card" data-name="Community Engagement">
+  <div class="opportunities-container" id="opportunitiescontainer" >
+     <div class="opportunity-card" data-name="Community Engagement">
       <img src="./images/engagement.jpg" alt="Community Engagement">
       <h3>Community Engagement</h3>
       <p>Participate in local projects to improve your neighborhood and support community initiatives.</p>
@@ -106,7 +112,7 @@ Join us and be part of a community that believes small acts of kindness can lead
       <h3>Health & Wellbeing</h3>
       <p>Support health initiatives and wellbeing programs to make a real difference in people’s lives.</p>
       <a href="#signup" class="btn join-btn">Join Now</a>
-    </div>
+    </div> --> 
   </div>
 </section>
 <section id="how-it-works" class="how-it-works">
@@ -202,53 +208,10 @@ Join us and be part of a community that believes small acts of kindness can lead
   <p id="statusMessage"></p>
 </section>
 
-
-<!-- <script>
-  function registerVolunteer(name, age, skill) {
-    return {
-      name: name,
-      age: age,
-      skill: skill,
-     
-    };
-  }
-  function register(){
-  const button = document.getElementById("registerBtn");
-  button.addEventListener("click", function () {
-    let name = document.getElementById("name").value;
-    let age = Number(document.getElementById("age").value);
-    let skill = document.getElementById("skill").value;
-    if (name === "" || skill === "" || age === 0) {
-      alert("Please fill all fields");
-      return;
-    }
-    if (age < 18) {
-      alert("Age must be 18 or above");
-      return;
-    }
-    button.style.color = "#d8670b";
-    button.innerText = "Clicked";
-    let volunteer = registerVolunteer(name, age, skill);
-    console.log(volunteer);
-    alert("Volunteer Registered Successfully!");
-  });}
-</script> -->
-<!-- <section id="signup" class="signup">
-  <h2>Sign Up as a Volunteer</h2>
-  <p>Join Volunity and start making a difference today!</p>
-
-  <form class="signup-form" id="signupForm">
-    <input type="text" id="signupName" placeholder="Full Name" required>
-    <input type="email" id="signupEmail" placeholder="Email Address" required>
-    <input type="password" id="signupPassword" placeholder="Create Password" required>
-
-    <button type="submit" class="btn x" id="registerBtn">
-      Register Now
-    </button>
-  </form> -->
 <footer class="footer">
   <p>&copy; 2024 Volunity. </p></footer>
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/opportunities.js"></script>
 
 </body>
 </html>

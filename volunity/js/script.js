@@ -154,3 +154,73 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+
+/* ===================================================
+   LOAD OPPORTUNITY CARDS (ASYNC / AWAIT)
+=================================================== */
+
+function getCardsData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([
+        {
+          name: "Community Engagement",
+          image: "./images/engagement.jpg",
+          description:
+            "Participate in local projects to improve your neighborhood and support community initiatives."
+        },
+        {
+          name: "Environmental Projects",
+          image: "./images/enviromental.jpg",
+          description:
+            "Help protect nature and promote sustainability through hands-on environmental projects."
+        },
+        {
+          name: "Education & Mentorship",
+          image: "./images/education.jpg",
+          description:
+            "Mentor and guide youth or peers, sharing your skills and knowledge to empower others."
+        },
+        {
+          name: "Health & Wellbeing",
+          image: "./images/health.jpg",
+          description:
+            "Support health initiatives and wellbeing programs to make a real difference in people’s lives."
+        }
+      ]);
+    }, 2000); 
+  });
+}
+async function loadCards() {
+  const container = document.getElementById("opportunitiescontainer");
+  if (!container) return;
+  container.innerHTML = "<p>Loading opportunities...</p>";
+
+  try {
+    const cards = await getCardsData();
+
+    container.innerHTML = "";
+
+    cards.forEach((cardData) => {
+      const card = document.createElement("div");
+      card.className = "opportunity-card";
+      card.dataset.name = cardData.name;
+
+      card.innerHTML = `
+        <img src="${cardData.image}" alt="${cardData.name}">
+        <h3>${cardData.name}</h3>
+        <p>${cardData.description}</p>
+        <a href="#signup" class="btn join-btn">Join Now</a>
+      `;
+
+      container.appendChild(card);
+    });
+
+  } catch (error) {
+    container.innerHTML = "<p>Failed to load opportunities </p>";
+  }
+}
+
+
+document.addEventListener("DOMContentLoaded", loadCards);
