@@ -1,0 +1,50 @@
+ body , #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; 
+  font-family: Arial;
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center; 
+  min-height: 100vh;     
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  color: #3a5a40;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.loading {
+  color: #3498db;
+  font-size: 18px;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Users grid */
+.users-grid {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+  width: 100%;
+  max-width: 900px; 
+  margin-top: 20px;
+}
