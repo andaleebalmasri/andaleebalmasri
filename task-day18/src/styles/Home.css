@@ -1,0 +1,50 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  
+}
+
+.hero {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; 
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #635036;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+    color: #7e684a;
+
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  background-color: #3a5a40;
+  color: efe6d8;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1f4727;
+  transform: scale(1.05);
+}
+

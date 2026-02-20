@@ -1,0 +1,34 @@
+.page {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  padding: 60px 20px;
+  background-color: #efe6d8; 
+  min-height: 80vh;
+  gap: 20px; 
+}
+
+.page h1 {
+  font-size: 42px;
+  color: #635036;
+  margin: 0; 
+  text-align: center;
+}
+
+.page h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #635036;
+  margin: 0;
+  text-align: center;
+}
+
+/* الفقرة */
+.page p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+  text-align: center;
+  margin: 0;
+  color: #7e684a;
+}

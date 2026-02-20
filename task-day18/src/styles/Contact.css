@@ -1,0 +1,40 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 20px; 
+}
+
+form input,
+form textarea {
+  padding: 12px 15px;
+  border: 2px solid #3a5a40;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #185824;
+  box-shadow: 0 0 8px rgba(30,144,255,0.3);
+  outline: none;
+}
+
+.btn-message {
+  padding: 12px 25px;
+  background-color: #3a5a40;
+  color: #efe6d8;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-message:hover {
+  background-color: #1e5328;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
