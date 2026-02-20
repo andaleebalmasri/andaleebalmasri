@@ -1,0 +1,23 @@
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* يخلي الفيديو يغطي الشاشة */
+  z-index: -1; /* يخليه ورا كل شي */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
