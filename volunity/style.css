@@ -134,6 +134,7 @@ width: 120px;
   margin-top: 10px;
   border-radius: 6px;
 }
+
 .volunteer {
   background-color: #efe6d8;
   align-items: center;
@@ -142,11 +143,16 @@ width: 120px;
 }
 
 .volunteer h2 {
+  background-color: #efe6d8;
+  text-align: center;
+  align-items: center;
   font-size: 2.5rem;
  color: #635036;
   margin-bottom: 20px;
 }
 .oppo_btn {
+    text-align: center;
+  align-items: center;
   background-color: #3a5a40;
   color: #efe6d8;
   padding: 12px 28px;
